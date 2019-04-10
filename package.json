@@ -1,0 +1,44 @@
+{
+  "name": "goonpack",
+  "version": "0.1.0",
+  "description": "A module bundler, like webpack or browserify, except extremely basic",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha ./dist/test",
+    "coverage": "tsc && nyc --reporter=html --reporter=text mocha ./dist/test"
+  },
+  "nyc": {
+    "exclude": [
+      "./dist/test"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrkn/goonpack.git"
+  },
+  "keywords": [],
+  "author": "Nik Coughlin <nrkn.com@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nrkn/goonpack/issues"
+  },
+  "homepage": "https://github.com/nrkn/goonpack#readme",
+  "devDependencies": {
+    "@mojule/files": "^0.2.2",
+    "@types/escodegen": "0.0.6",
+    "@types/esprima": "^4.0.2",
+    "@types/estraverse": "0.0.6",
+    "@types/lodash.snakecase": "^4.1.6",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "escodegen": "^1.11.1",
+    "esprima": "^4.0.1",
+    "estraverse": "^4.2.0",
+    "lodash.snakecase": "^4.1.1"
+  }
+}
