@@ -18,7 +18,11 @@
     "type": "git",
     "url": "git+https://github.com/nrkn/goonpack.git"
   },
-  "keywords": [ "module", "bundle", "bundler" ],
+  "keywords": [
+    "module",
+    "bundle",
+    "bundler"
+  ],
   "author": "Nik Coughlin <nrkn.com@gmail.com>",
   "license": "MIT",
   "bugs": {
